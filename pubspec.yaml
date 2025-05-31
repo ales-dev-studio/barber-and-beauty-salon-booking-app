@@ -1,0 +1,50 @@
+name: barber_and_beauty_salon_booking_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^2.0.17
+  flutter_gen: ^5.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  flutter_gen_runner:
+
+  flutter_lints: ^5.0.0
+
+flutter_gen:
+  output: lib/core/gen
+  line_length: 80
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: AksharBold
+      fonts:
+        - asset: assets/fonts/Akshar-Bold.ttf
+
+    - family: AksharMedium
+      fonts:
+        - asset: assets/fonts/Akshar-Medium.ttf
+
+    - family: AksharRegular
+      fonts:
+        - asset: assets/fonts/Akshar-Regular.ttf
