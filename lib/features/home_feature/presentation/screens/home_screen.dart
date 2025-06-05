@@ -30,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return AppScaffold(
       body: _tabs[_currentIndex],
       appBar: _currentIndex == 0 ? HomeAppBar() : null,
+      padding: EdgeInsets.zero,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Theme.of(context).scaffoldBackgroundColor,
