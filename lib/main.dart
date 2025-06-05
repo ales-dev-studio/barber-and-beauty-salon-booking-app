@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Barber and beauty salon booking app',
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.primaryColor,
@@ -23,9 +23,13 @@ class MyApp extends StatelessWidget {
         ),
         fontFamily: FontFamily.aksharRegular,
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           centerTitle: true,
-          titleTextStyle: TextStyle(fontSize: 20.0),
+          backgroundColor: AppColors.whiteColor,
+          titleTextStyle: TextStyle(
+            color: AppColors.blackColor,
+            fontSize: 18,
+          ),
         ),
         bottomSheetTheme: const BottomSheetThemeData(
           elevation: 0,
