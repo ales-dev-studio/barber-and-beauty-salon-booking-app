@@ -1,6 +1,8 @@
 import 'package:barber_and_beauty_salon_booking_app/core/gen/assets.gen.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/theme/dimens.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_search_bar.dart';
+import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/category_list.dart';
+import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/service_title_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeTab extends StatelessWidget {
@@ -21,6 +23,9 @@ class HomeTab extends StatelessWidget {
             ),
             child: Assets.images.banner.image(fit: BoxFit.fitWidth),
           ),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Service categories', onPressed: () {}),
+          CategoryList(),
         ],
       ),
     );
