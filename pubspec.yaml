@@ -49,3 +49,7 @@ flutter:
     - family: AksharRegular
       fonts:
         - asset: assets/fonts/Akshar-Regular.ttf
+
+    - family: AksharLight
+      fonts:
+        - asset: assets/fonts/Akshar-Light.ttf

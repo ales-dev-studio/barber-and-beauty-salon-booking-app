@@ -15,6 +15,9 @@ class $AssetsFontsGen {
   /// File path: assets/fonts/Akshar-Bold.ttf
   String get aksharBold => 'assets/fonts/Akshar-Bold.ttf';
 
+  /// File path: assets/fonts/Akshar-Light.ttf
+  String get aksharLight => 'assets/fonts/Akshar-Light.ttf';
+
   /// File path: assets/fonts/Akshar-Medium.ttf
   String get aksharMedium => 'assets/fonts/Akshar-Medium.ttf';
 
@@ -22,7 +25,12 @@ class $AssetsFontsGen {
   String get aksharRegular => 'assets/fonts/Akshar-Regular.ttf';
 
   /// List of all assets
-  List<String> get values => [aksharBold, aksharMedium, aksharRegular];
+  List<String> get values => [
+    aksharBold,
+    aksharLight,
+    aksharMedium,
+    aksharRegular,
+  ];
 }
 
 class $AssetsIconsGen {
@@ -37,6 +45,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/body-massage-icon.svg
   String get bodyMassageIcon => 'assets/icons/body-massage-icon.svg';
 
+  /// File path: assets/icons/body-massage.png
+  AssetGenImage get bodyMassage =>
+      const AssetGenImage('assets/icons/body-massage.png');
+
   /// File path: assets/icons/calendar.svg
   String get calendar => 'assets/icons/calendar.svg';
 
@@ -46,8 +58,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/facial-massage-icon.svg
   String get facialMassageIcon => 'assets/icons/facial-massage-icon.svg';
 
+  /// File path: assets/icons/facial-massage.png
+  AssetGenImage get facialMassage =>
+      const AssetGenImage('assets/icons/facial-massage.png');
+
   /// File path: assets/icons/hair-drying-icon.svg
   String get hairDryingIcon => 'assets/icons/hair-drying-icon.svg';
+
+  /// File path: assets/icons/hair-dye.png
+  AssetGenImage get hairDye => const AssetGenImage('assets/icons/hair-dye.png');
 
   /// File path: assets/icons/heart.svg
   String get heart => 'assets/icons/heart.svg';
@@ -70,6 +89,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/manicure-icon.svg
   String get manicureIcon => 'assets/icons/manicure-icon.svg';
 
+  /// File path: assets/icons/manicure.png
+  AssetGenImage get manicure =>
+      const AssetGenImage('assets/icons/manicure.png');
+
   /// File path: assets/icons/moon.svg
   String get moon => 'assets/icons/moon.svg';
 
@@ -88,15 +111,22 @@ class $AssetsIconsGen {
   /// File path: assets/icons/woman-hair-icon.svg
   String get womanHairIcon => 'assets/icons/woman-hair-icon.svg';
 
+  /// File path: assets/icons/woman-hair.png
+  AssetGenImage get womanHair =>
+      const AssetGenImage('assets/icons/woman-hair.png');
+
   /// List of all assets
-  List<String> get values => [
+  List<dynamic> get values => [
     arrowRightIos,
     arrowRight,
     bodyMassageIcon,
+    bodyMassage,
     calendar,
     cardPos,
     facialMassageIcon,
+    facialMassage,
     hairDryingIcon,
+    hairDye,
     heart,
     home,
     infoCircle,
@@ -104,17 +134,22 @@ class $AssetsIconsGen {
     location,
     logout,
     manicureIcon,
+    manicure,
     moon,
     notification,
     searchNormal,
     starFilled,
     user,
     womanHairIcon,
+    womanHair,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/banner.png
+  AssetGenImage get banner => const AssetGenImage('assets/images/banner.png');
 
   /// File path: assets/images/hair-cut.jpg
   AssetGenImage get hairCut =>
@@ -126,6 +161,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/massage.jpg
   AssetGenImage get massage => const AssetGenImage('assets/images/massage.jpg');
+
+  /// File path: assets/images/profile-image.jpg
+  AssetGenImage get profileImage =>
+      const AssetGenImage('assets/images/profile-image.jpg');
 
   /// File path: assets/images/user1.png
   AssetGenImage get user1 => const AssetGenImage('assets/images/user1.png');
@@ -152,9 +191,11 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    banner,
     hairCut,
     hairStyle,
     massage,
+    profileImage,
     user1,
     user2,
     user3,

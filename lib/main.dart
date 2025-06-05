@@ -21,19 +21,18 @@ class MyApp extends StatelessWidget {
           seedColor: AppColors.primaryColor,
           brightness: Brightness.light,
         ),
-        fontFamily: FontFamily.aksharRegular,
-        useMaterial3: true,
+        fontFamily: FontFamily.aksharLight,
         appBarTheme: AppBarTheme(
           centerTitle: true,
           backgroundColor: AppColors.whiteColor,
           titleTextStyle: TextStyle(
+            fontFamily: FontFamily.aksharBold,
             color: AppColors.blackColor,
             fontSize: 18,
           ),
         ),
-        bottomSheetTheme: const BottomSheetThemeData(
-          elevation: 0,
-        ),
+        bottomSheetTheme: const BottomSheetThemeData(elevation: 0),
+        scaffoldBackgroundColor: AppColors.whiteColor,
       ),
       home: const HomeScreen(),
     );

@@ -13,6 +13,9 @@ class FontFamily {
   /// Font family: AksharBold
   static const String aksharBold = 'AksharBold';
 
+  /// Font family: AksharLight
+  static const String aksharLight = 'AksharLight';
+
   /// Font family: AksharMedium
   static const String aksharMedium = 'AksharMedium';
 
