@@ -1,6 +1,7 @@
 import 'package:barber_and_beauty_salon_booking_app/core/gen/assets.gen.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_scaffold.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_svg_viewer.dart';
+import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/home_app_bar.dart';
 import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/tabs/calendar_tab.dart';
 import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/tabs/home_tab.dart';
 import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/tabs/profile_tab.dart';
@@ -28,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return AppScaffold(
       body: _tabs[_currentIndex],
+      appBar: _currentIndex == 0 ? HomeAppBar() : null,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Theme.of(context).scaffoldBackgroundColor,
