@@ -2,6 +2,7 @@ import 'package:barber_and_beauty_salon_booking_app/core/gen/assets.gen.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/theme/dimens.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_search_bar.dart';
 import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/category_list.dart';
+import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/service_list.dart';
 import 'package:barber_and_beauty_salon_booking_app/features/home_feature/presentation/widgets/service_title_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,16 @@ class HomeTab extends StatelessWidget {
           SizedBox(height: Dimens.padding),
           ServiceTitleWidget(title: 'Service categories', onPressed: () {}),
           CategoryList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Special offers', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Nearby beauty salon', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Popular services', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.largePadding),
         ],
       ),
     );
