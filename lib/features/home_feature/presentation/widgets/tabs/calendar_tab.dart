@@ -1,3 +1,8 @@
+import 'package:barber_and_beauty_salon_booking_app/core/gen/assets.gen.dart';
+import 'package:barber_and_beauty_salon_booking_app/core/gen/fonts.gen.dart';
+import 'package:barber_and_beauty_salon_booking_app/core/theme/colors.dart';
+import 'package:barber_and_beauty_salon_booking_app/core/theme/dimens.dart';
+import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_light_text.dart';
 import 'package:flutter/material.dart';
 
 class CalendarTab extends StatelessWidget {
@@ -5,8 +10,136 @@ class CalendarTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('CalendarTab'),
+    final List<String> images = [
+      Assets.images.user1.path,
+      Assets.images.user2.path,
+      Assets.images.user3.path,
+      Assets.images.user4.path,
+      Assets.images.user5.path,
+      Assets.images.user1.path,
+      Assets.images.user2.path,
+      Assets.images.user3.path,
+      Assets.images.user4.path,
+      Assets.images.user5.path,
+    ];
+    final List<String> names = [
+      'Emily Johnson',
+      'Daniel Taylor',
+      'Henry Rodriguez',
+      'Amelia Young',
+      'Samuel Hernandez',
+      'Emily Johnson',
+      'Daniel Taylor',
+      'Henry Rodriguez',
+      'Amelia Young',
+      'Samuel Hernandez',
+    ];
+    final List<String> services = [
+      'Hair Dye',
+      'Massage',
+      'Haircut',
+      'Facial',
+      'Manicure',
+      'Hair Dye',
+      'Massage',
+      'Haircut',
+      'Facial',
+      'Manicure',
+    ];
+    return ListView.builder(
+      itemCount: names.length,
+      itemBuilder: (final context, final index) {
+        return Container(
+          decoration: BoxDecoration(
+            color: AppColors.cardColor,
+            borderRadius: BorderRadius.circular(Dimens.corners),
+          ),
+          padding: EdgeInsets.all(Dimens.largePadding),
+          margin: EdgeInsets.symmetric(
+            horizontal: index == 0 ? Dimens.largePadding : Dimens.padding,
+            vertical: Dimens.padding,
+          ),
+          child: Row(
+            spacing: Dimens.largePadding,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 110,
+                height: 110,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimens.corners),
+                  color: AppColors.primaryColor,
+                ),
+                padding: EdgeInsets.only(top: Dimens.padding),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(Dimens.corners),
+                  child: Image.asset(images[index], fit: BoxFit.fitHeight),
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          names[index],
+                          style: TextStyle(
+                            fontFamily: FontFamily.aksharMedium,
+                            fontSize: 16,
+                          ),
+                        ),
+                        AppLightText(services[index]),
+                      ],
+                    ),
+                    SizedBox(height: Dimens.largePadding),
+                    Text(
+                      '2025 May20 . 12 - 15',
+                      style: TextStyle(
+                        fontFamily: FontFamily.aksharMedium,
+                        fontSize: 16,
+                      ),
+                    ),
+                    SizedBox(height: Dimens.smallPadding),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              '\$170.00',
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontFamily: FontFamily.aksharMedium,
+                              ),
+                            ),
+                            Text('/Person', style: TextStyle(fontSize: 14)),
+                          ],
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: AppColors.whiteColor,
+                            backgroundColor: AppColors.primaryColor,
+                          ),
+                          child: Text(
+                            'See more',
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontFamily: FontFamily.aksharBold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

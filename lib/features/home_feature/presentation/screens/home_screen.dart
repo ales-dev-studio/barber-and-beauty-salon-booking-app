@@ -29,7 +29,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return AppScaffold(
       body: _tabs[_currentIndex],
-      appBar: _currentIndex == 0 ? HomeAppBar() : null,
+      appBar:
+          _currentIndex == 0
+              ? HomeAppBar()
+              : _currentIndex == 2
+              ? AppBar(title: Text('Calendar'))
+              : null,
       padding: EdgeInsets.zero,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
