@@ -2,6 +2,7 @@ import 'package:barber_and_beauty_salon_booking_app/core/gen/assets.gen.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/gen/fonts.gen.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/theme/colors.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/theme/dimens.dart';
+import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_elevated_button.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_light_text.dart';
 import 'package:flutter/material.dart';
 
@@ -117,19 +118,9 @@ class CalendarTab extends StatelessWidget {
                             Text('/Person', style: TextStyle(fontSize: 14)),
                           ],
                         ),
-                        ElevatedButton(
+                        AppElevatedButton(
                           onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor: AppColors.whiteColor,
-                            backgroundColor: AppColors.primaryColor,
-                          ),
-                          child: Text(
-                            'See more',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontFamily: FontFamily.aksharBold,
-                            ),
-                          ),
+                          title: 'See more',
                         ),
                       ],
                     ),

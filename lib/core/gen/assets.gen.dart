@@ -77,8 +77,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/info-circle.svg
   String get infoCircle => 'assets/icons/info-circle.svg';
 
+  /// File path: assets/icons/info.svg
+  String get info => 'assets/icons/info.svg';
+
   /// File path: assets/icons/language-square.svg
   String get languageSquare => 'assets/icons/language-square.svg';
+
+  /// File path: assets/icons/language.svg
+  String get language => 'assets/icons/language.svg';
 
   /// File path: assets/icons/location.svg
   String get location => 'assets/icons/location.svg';
@@ -130,7 +136,9 @@ class $AssetsIconsGen {
     heart,
     home,
     infoCircle,
+    info,
     languageSquare,
+    language,
     location,
     logout,
     manicureIcon,
