@@ -16,14 +16,12 @@ class AppBorderedIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(
-          color: AppColors.grayColor,
-        ),
+        border: Border.all(color: AppColors.grayColor),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(
         onPressed: onPressed ?? () {},
-        icon: AppSvgViewer(iconPath, width: 25,),
+        icon: AppSvgViewer(iconPath, width: 25),
       ),
     );
   }

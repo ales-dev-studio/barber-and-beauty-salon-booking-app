@@ -118,10 +118,7 @@ class CalendarTab extends StatelessWidget {
                             Text('/Person', style: TextStyle(fontSize: 14)),
                           ],
                         ),
-                        AppElevatedButton(
-                          onPressed: () {},
-                          title: 'See more',
-                        ),
+                        AppElevatedButton(onPressed: () {}, title: 'See more'),
                       ],
                     ),
                   ],

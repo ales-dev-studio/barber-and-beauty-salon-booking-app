@@ -23,12 +23,8 @@ class AppSvgViewer extends StatelessWidget {
       path,
       width: width,
       height: height,
-      colorFilter: color == null
-          ? null
-          : ColorFilter.mode(
-              color!,
-              BlendMode.srcIn,
-            ),
+      colorFilter:
+          color == null ? null : ColorFilter.mode(color!, BlendMode.srcIn),
       fit: fit ?? BoxFit.contain,
     );
   }

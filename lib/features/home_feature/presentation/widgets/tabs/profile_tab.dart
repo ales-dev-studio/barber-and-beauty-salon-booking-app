@@ -7,7 +7,6 @@ import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_light_text.
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/app_list_tile.dart';
 import 'package:barber_and_beauty_salon_booking_app/core/widgets/user_profile_image_widget.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class ProfileTab extends StatelessWidget {
   const ProfileTab({super.key});

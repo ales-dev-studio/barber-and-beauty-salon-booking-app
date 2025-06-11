@@ -33,7 +33,7 @@ class AppListTile extends StatelessWidget {
           title: Text(title, style: TextStyle(fontSize: 15)),
           leading: AppSvgViewer(leadingIconPath, width: 19),
           trailing:
-          trailing ?? AppSvgViewer(Assets.icons.arrowRightIos, width: 16),
+              trailing ?? AppSvgViewer(Assets.icons.arrowRightIos, width: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(Dimens.corners),
           ),
