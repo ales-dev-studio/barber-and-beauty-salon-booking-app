@@ -1,16 +1,29 @@
-# barber_and_beauty_salon_booking_app
+# Barber and Beauty Salon Booking App - Flutter UI  
 
-A new Flutter project.
+A complete Flutter UI implementation for a modern barber shop booking application. 
+This project demonstrates clean architecture, responsive design, and best practices for building beautiful Flutter interfaces.
 
-## Getting Started
+## Features  
+- **Custom UI Components**: Reusable widgets for app bars, buttons, cards  
+- **Salmon Bottom Bar**: Stylish navigation with animations  
+- **Responsive Layouts**: Works on mobile & tablet screens  
+- **SVG Integration**: Crisp vector icons and assets  
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack  
+- **Flutter**
+- **Packages**:  
+  - `flutter_svg` for vector assets  
+  - `salmon_bottom_bar` for navigation  
+  - `flutter_gen` for asset management  
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Getting Started  
+```bash
+git clone https://github.com/ales-dev-studio/flutter-barber-app.git
+cd flutter-barber-app
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📚 Resources  
+- [Figma Design](https://www.figma.com/design/Ij99qRMcvJCoRyIHJQ5Hpg/Barber-and-Beauty-Salon-Booking-App?node-id=0-1&t=UkhyYbbanhQTylGf-1)  
+- [Flutter Documentation](https://flutter.dev)  
