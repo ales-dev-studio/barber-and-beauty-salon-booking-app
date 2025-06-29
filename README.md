@@ -1,7 +1,8 @@
 # Barber and Beauty Salon Booking App - Flutter UI  
 
-A complete Flutter UI implementation for a modern barber shop booking application. 
-This project demonstrates clean architecture, responsive design, and best practices for building beautiful Flutter interfaces.
+## Demo image
+
+![Demo](https://raw.githubusercontent.com/ales-dev-studio/barber-and-beauty-salon-booking-app/refs/heads/main/assets/images/Demo.jpg)
 
 ## Features  
 - **Custom UI Components**: Reusable widgets for app bars, buttons, cards  
