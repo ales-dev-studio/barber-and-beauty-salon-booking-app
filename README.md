@@ -10,14 +10,14 @@
 - **Responsive Layouts**: Works on mobile & tablet screens  
 - **SVG Integration**: Crisp vector icons and assets  
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Flutter**
 - **Packages**:  
   - `flutter_svg` for vector assets  
   - `salmon_bottom_bar` for navigation  
   - `flutter_gen` for asset management  
 
-## 🚀 Getting Started  
+## Getting Started  
 ```bash
 git clone https://github.com/ales-dev-studio/flutter-barber-app.git
 cd flutter-barber-app
